@@ -7,7 +7,6 @@ namespace SportsStore.Models.ViewModels
         public int TotalItems { get; set; }
         public int ItemsPerRage { get; set; }
         public int CurrentPage { get; set; }
-        public int TotalPages => (int)Math.Ceiling((decimal)TotalItems / ItemsPerRage);
-                
+        public int TotalPages => (int)Math.Ceiling((decimal)TotalItems / ItemsPerRage);                
     }
 }
